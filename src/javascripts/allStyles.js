@@ -1,1 +1,1 @@
-import "../sylesheets/style.css";
+import '../stylesheets/style.css'
