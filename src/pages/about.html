@@ -1,12 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>О нас</title>
+    <title>Ящрц — о&nbsp;нас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="icon" href="../images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
   </head>
   <body>
-    <h1>О нас</h1>
-    <li><a href="../index.html">На главную</a></li>
+    <div class="stack" id="top">
+      <input class="menu-toggle" type="checkbox" id="menu" />
+      <header class="header">
+        <a class="header__logo" href="../index.html"
+          ><img src="../images/logo.svg" alt="ящрц"
+        /></a>
+        <nav class="header__nav">
+          <a href="../pages/about.html">о&nbsp;нас</a>
+          <a href="../pages/articles/saharnyy-possum.html">статья</a>
+        </nav>
+        <a class="header__cta" href="../index.html#my-form">оставить заявку</a>
+        <label class="header__burger" for="menu" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </label>
+      </header>
+
+      <label class="menu-backdrop" for="menu" aria-hidden="true"></label>
+      <nav class="menu" aria-label="Меню">
+        <div class="menu__top">
+          <a class="menu__logo" href="../index.html"><img src="../images/logo.svg" alt="ящрц" /></a>
+          <label class="menu__close" for="menu" aria-label="Закрыть меню"></label>
+        </div>
+        <a class="menu__link" href="../pages/about.html">о&nbsp;нас</a>
+        <a class="menu__link" href="../pages/articles/saharnyy-possum.html">статья</a>
+        <a class="menu__link" href="../index.html#my-form">оставить заявку</a>
+        <div class="socials__links">
+          <a class="button button--light" href="https://t.me/yashrc_media" target="_blank">telegram*</a>
+          <a class="button button--light" href="https://www.instagram.com/yashrc_media" target="_blank">instagram*</a>
+        </div>
+        <p class="note">*Instagram и Telegram запрещены в&nbsp;РФ</p>
+      </nav>
+
+      <main class="stack">
+        <section class="about-hero block block--green">
+          <h1 class="about-hero__question display">-Кто вы такие? Чем занимаетесь? И&nbsp;зачем это всё?</h1>
+          <p class="about-hero__answer giant c-pink">-ящрц!</p>
+          <div class="about-hero__side">
+            <p>Ящрц — медиа про экзотических животных и&nbsp;людей, которые их заводят. Рассказываем, как выбрать питомца, ухаживать за ним и&nbsp;не верить мифам</p>
+            <a class="button" href="articles/saharnyy-possum.html">Читать статью</a>
+          </div>
+        </section>
+
+        <div class="photos">
+          <div class="block"><img src="../images/about-01.jpg" alt="Среднеазиатская черепаха" /></div>
+          <div class="block"><img src="../images/about-02.jpg" alt="Леопардовый геккон" /></div>
+          <div class="block"><img src="../images/about-03.jpg" alt="Сахарный поссум" /></div>
+        </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track"><span>геккон живёт до 20 лет</span><span>черепаха — больше 40</span><span>аксолотль отращивает лапы</span><span>геккон живёт до 20 лет</span><span>черепаха — больше 40</span><span>аксолотль отращивает лапы</span></div>
+        <div class="marquee__track"><span>геккон живёт до 20 лет</span><span>черепаха — больше 40</span><span>аксолотль отращивает лапы</span><span>геккон живёт до 20 лет</span><span>черепаха — больше 40</span><span>аксолотль отращивает лапы</span></div>
+      </div>
+
+        <section>
+          <h2 class="facts-title title-xl c-green">-Сколько живут экзоты?<br /><span class="c-pink">-Дольше, чем вы думаете</span></h2>
+          <div class="lifespan">
+            <article class="lifespan__card block block--green">
+              <h3 class="title-m">Среднеазиатская черепаха</h3>
+              <p>Её часто передают по наследству</p>
+              <span class="lifespan__num">40+</span>
+            </article>
+            <article class="lifespan__card block block--pink">
+              <h3 class="title-m">Леопардовый геккон</h3>
+              <p>Столько длится учёба от первого класса до диплома</p>
+              <span class="lifespan__num">20+</span>
+            </article>
+            <article class="lifespan__card block block--light">
+              <h3 class="title-m">Сахарный поссум</h3>
+              <p>И&nbsp;всё это время хочет компании</p>
+              <span class="lifespan__num">15+</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="how">
+          <h2 class="title-xl c-green">-А откуда вы всё знаете?</h2>
+          <div class="how__item">
+            <h3 class="title-l c-pink">-Спрашиваем ветеринаров</h3>
+            <p>Каждый совет об уходе сверяем с&nbsp;врачом, который лечит экзотов</p>
+          </div>
+          <div class="how__item">
+            <h3 class="title-l c-light">-Говорим с&nbsp;владельцами</h3>
+            <p>Записываем, как на самом деле живётся с&nbsp;питомцем, без глянца</p>
+          </div>
+          <div class="how__item">
+            <h3 class="title-l c-green">-Сравниваем виды</h3>
+            <p>Помогаем выбрать животное до покупки, а&nbsp;не после</p>
+          </div>
+        </section>
+
+        <section class="intro block block--light">
+          <div class="intro__text">
+            <p class="label">Первая статья уже вышла</p>
+            <h2 class="title-xl">-Знакомьтесь: сахарный поссум!</h2>
+            <p>Весит как одно яблоко, умеет планировать с&nbsp;дерева на дерево и&nbsp;не выносит одиночества</p>
+            <a class="button" href="articles/saharnyy-possum.html">Читать статью</a>
+          </div>
+          <div class="passport block block--green">
+            <p class="passport__label">Паспорт питомца</p>
+            <div class="passport__photo"><img src="../images/about-04.jpg" alt="Сахарный поссум" /></div>
+            <div>
+              <h3 class="title-m">Сахарный поссум</h3>
+              <p class="passport__latin">petaurus breviceps</p>
+            </div>
+            <dl class="passport__list">
+              <dt>вид</dt><dd>сумчатое</dd>
+              <dt>родина</dt><dd>Австралия и&nbsp;Новая Гвинея</dd>
+              <dt>вес</dt><dd>100–160 г</dd>
+              <dt>активен</dt><dd>ночью</dd>
+              <dt>характер</dt><dd>общительный, живёт в&nbsp;группе</dd>
+            </dl>
+            <span class="sticker passport-sticker">статья 1</span>
+          </div>
+        </section>
+
+        <section class="write block block--pink">
+          <h2 class="write__title title-xl">-Есть история про своего экзота?</h2>
+          <p class="write__giant giant">-Пишите!</p>
+          <div class="write__side">
+            <p>Расскажите, как живёте со своим питомцем — мы прочитаем каждую историю</p>
+            <a class="button" href="mailto:hello@yashrc.ru">написать на почту</a>
+          </div>
+        </section>
+      </main>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track"><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span></div>
+        <div class="marquee__track"><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span><span>медиа об экзотических животных</span></div>
+      </div>
+      <footer class="footer block block--green">
+        <p class="title-m">-А где вас искать?</p>
+        <div class="footer__logo">
+          <img src="../images/logo-big.svg" alt="ящрц" />
+          <span class="sticker">до встречи!</span>
+        </div>
+        <nav class="footer__nav">
+          <a href="../pages/about.html">о&nbsp;нас</a>
+          <a href="../pages/articles/saharnyy-possum.html">статья</a>
+          <a href="../index.html#my-form">оставить заявку</a>
+          <a href="#top">наверх ↑</a>
+        </nav>
+      </footer>
+
+      <div class="socials">
+        <p class="socials__text">А&nbsp;пока следите за нами в&nbsp;социальных сетях</p>
+        <div class="socials__links">
+          <a class="button" href="https://t.me/yashrc_media" target="_blank">telegram*</a>
+          <a class="button" href="https://www.instagram.com/yashrc_media" target="_blank">instagram*</a>
+        </div>
+        <a class="socials__nick" href="https://t.me/yashrc_media" target="_blank">@yashrc_media</a>
+        <p class="note socials__note">*Instagram и Telegram запрещены в&nbsp;РФ</p>
+      </div>
+    </div>
   </body>
 </html>

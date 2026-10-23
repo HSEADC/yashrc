@@ -1,29 +1,110 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <title>Ящрц — скоро</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   </head>
   <body>
-    <h1>Главная</h1>
-    <h2>Разделы</h2>
-    <ul>
-      <li><a href="pages/about.html">О нас</a></li>
-      <li><a href="pages/articles.html">Статьи</a></li>
-      <li><a href="pages/dictionary.html">Справочник</a></li>
-    </ul>
-    <div data-fs-success>Thanks for your submission!</div>
-    <div data-fs-error>Oops! There was a problem submitting your form.</div>
-    <form id="my-form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" data-fs-field />
-      <span data-fs-error="email"></span>
-      <label for="message">Message:</label>
-      <input type="text" id="message" name="message" data-fs-field />
-      <span data-fs-error="message"></span>
-      <button type="submit" data-fs-submit-btn>Submit</button>
-    </form>
+    <div class="stub stack">
+      <input class="menu-toggle" type="checkbox" id="menu" />
+      <header class="header">
+        <a class="header__logo" href="index.html"
+          ><img src="images/logo.svg" alt="ящрц"
+        /></a>
+        <nav class="header__nav">
+          <a href="pages/about.html">о&nbsp;нас</a>
+          <a href="pages/articles/saharnyy-possum.html">статья</a>
+        </nav>
+        <a class="header__cta" href="#my-form">оставить заявку</a>
+        <label class="header__burger" for="menu" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </label>
+      </header>
+
+      <label class="menu-backdrop" for="menu" aria-hidden="true"></label>
+      <nav class="menu" aria-label="Меню">
+        <div class="menu__top">
+          <a class="menu__logo" href="index.html"><img src="images/logo.svg" alt="ящрц" /></a>
+          <label class="menu__close" for="menu" aria-label="Закрыть меню"></label>
+        </div>
+        <a class="menu__link" href="pages/about.html">о&nbsp;нас</a>
+        <a class="menu__link" href="pages/articles/saharnyy-possum.html">статья</a>
+        <a class="menu__link" href="index.html#my-form">оставить заявку</a>
+        <div class="socials__links">
+          <a class="button button--light" href="https://t.me/yashrc_media" target="_blank">telegram*</a>
+          <a class="button button--light" href="https://www.instagram.com/yashrc_media" target="_blank">instagram*</a>
+        </div>
+        <p class="note">*Instagram и Telegram запрещены в&nbsp;РФ</p>
+      </nav>
+
+      <main class="stub__hero block">
+        <h1 class="stub__question display">
+          -Ты можешь выбрать себе любого экзотического питомца, которого
+          захочешь
+        </h1>
+        <p class="stub__answer giant">-ящрц!</p>
+
+        <form id="my-form" class="stub__form">
+          <p>
+            Скоро тут будет медиа об экзотических животных. оставьте почту, и
+            мы вас оповестим об открытии
+          </p>
+          <input
+            class="form__field"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите почту"
+            required
+            data-fs-field
+          />
+          <span class="form__note" data-fs-error="email"></span>
+          <button class="button button--pink" type="submit" data-fs-submit-btn>
+            оставить заявку
+          </button>
+          <p class="form__note" data-fs-success>
+            Спасибо! Напишем, как только откроемся
+          </p>
+          <p class="form__note" data-fs-error>
+            Что-то пошло не так. Попробуйте ещё раз
+          </p>
+        </form>
+      </main>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>медиа об экзотических животных</span><span>скоро</span
+          ><span>медиа об экзотических животных</span><span>скоро</span>
+        </div>
+        <div class="marquee__track">
+          <span>медиа об экзотических животных</span><span>скоро</span
+          ><span>медиа об экзотических животных</span><span>скоро</span>
+        </div>
+      </div>
+
+      <footer class="socials">
+        <p class="socials__text">А&nbsp;пока следите за нами в&nbsp;социальных сетях</p>
+        <div class="socials__links">
+          <a class="button" href="https://t.me/yashrc_media" target="_blank">telegram*</a>
+          <a class="button" href="https://www.instagram.com/yashrc_media" target="_blank"
+            >instagram*</a
+          >
+        </div>
+        <a class="socials__nick" href="https://t.me/yashrc_media" target="_blank">@yashrc_media</a>
+        <p class="note socials__note">*Instagram и Telegram запрещены в&nbsp;РФ</p>
+      </footer>
+    </div>
 
     <!-- Place these scripts at the end of the body tag -->
     <script>

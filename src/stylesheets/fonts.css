@@ -1,23 +1,21 @@
+/* Заголовки: TT Modernoir (если установлен у пользователя), запасной — Desyatiy */
 @font-face {
-  font-family: "PT Root UI";
-  src: url(../fonts/pt-root-ui_bold.woff), url(../fonts/pt-root-ui_bold.woff2);
+  font-family: "Yash Display";
+  src:
+    local("TT Modernoir Trial Bold"),
+    local("TTModernoirTrial-Bold"),
+    local("TT Modernoir Bold"),
+    url(../fonts/desyatiy_regular.woff) format("woff");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
-  font-family: "PT Root UI";
+  font-family: "Yash Display";
   src:
-    url(../fonts/pt-root-ui_medium.woff), url(../fonts/pt-root-ui_medium.woff2);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "PT Root UI";
-  src:
-    url(../fonts/pt-root-ui_regular.woff),
-    url(../fonts/pt-root-ui_regular.woff2);
+    local("TT Modernoir Trial Medium"),
+    local("TTModernoirTrial-Medium"),
+    url(../fonts/desyatiy_regular.woff) format("woff");
   font-weight: 500;
+  font-display: swap;
 }
-@font-face {
-  font-family: "PT Root UI";
-  src: url(../fonts/pt-root-ui_light.woff), url(../fonts/pt-root-ui_light.woff);
-  font-weight: 400;
-}
+/* Текст: Onest подключается в <head> страницы через Google Fonts */

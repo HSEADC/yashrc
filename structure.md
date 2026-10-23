@@ -1,0 +1,22 @@
+- index.html — заглушка: «скоро открытие» и форма сбора почт (Formspree)
+- /stylesheets
+  - style.css — собирает все стили по порядку
+  - reset.css — сброс браузерных стилей
+  - fonts.css — шрифты: TT Modernoir Trial (из системы) → Desyatiy (запасной), Onest из Google Fonts
+  - layout.css — переменные, сетка, блоки, шапка, меню-попап, подвал, страницы
+  - animation.css — бегущая строка
+  - adaptive.css — планшет (до 1024px) и телефон (до 600px)
+- /javascripts
+  - index.js — скрипт главной
+  - allStyles.js — общий чанк для остальных страниц
+- /fonts — desyatiy_regular.woff (+ лицензия), pt-root-ui
+- /images — логотипы, фото, фавикон
+- /ai — скриншоты для README
+- /pages
+  - about.html — о нас
+  - articles.html — список статей (черновик)
+  - dictionary.html — справочник (черновик)
+  - /articles
+    - saharnyy-possum.html — статья «Сахарный поссум: что нужно знать до покупки»
+    - yascheritsy.html — черновик
+    - how-to-choose-first-exota.html — черновик

@@ -1,1 +1,1 @@
-import '../stylesheets/style.css'
+// стили подключены через <link> в <head> каждой страницы

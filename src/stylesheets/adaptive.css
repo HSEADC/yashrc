@@ -1,0 +1,771 @@
+/* ---------- планшет: макет 768 ---------- */
+@media (max-width: 1024px) {
+  html {
+    font-size: min(calc(1vw / 7.68), calc(1svh / 10.24));
+  }
+  :root {
+    --pad: 40rem;
+  }
+  body {
+    font-size: 18rem;
+  }
+  .title-xl {
+    font-size: 64rem;
+  }
+  .title-l {
+    font-size: 44rem;
+  }
+  .title-m {
+    font-size: 36rem;
+  }
+  .giant {
+    font-size: 170rem;
+  }
+  .section {
+    padding-top: 80rem;
+  }
+
+  .header {
+    padding: 0 30rem;
+    font-size: 20rem;
+  }
+  .header__logo {
+    margin-right: 40rem;
+  }
+  .marquee__track {
+    font-size: 32rem;
+  }
+
+  .socials {
+    padding: 0 30rem;
+  }
+  .socials__text {
+    width: 200rem;
+    margin-right: 24rem;
+    font-size: 18rem;
+  }
+  .socials__links .button {
+    min-width: 170rem;
+  }
+  .socials__nick {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+    gap: 40rem;
+    padding: 40rem 30rem;
+  }
+  .footer__logo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1011 / 419;
+    .sticker {
+      font-size: 32rem;
+    }
+  }
+
+  .stub__hero {
+    grid-template-columns: 1fr;
+    padding: 48rem 40rem 40rem;
+    min-height: 0;
+    row-gap: 40rem;
+  }
+  .stub__question {
+    font-size: 40rem;
+  }
+  .stub__answer {
+    margin: 0;
+  }
+  .stub__form {
+    padding: 0;
+    max-width: 420rem;
+  }
+
+  .about-hero {
+    min-height: 0;
+    padding: 48rem 40rem 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+  }
+  .about-hero__question {
+    max-width: 520rem;
+    font-size: 40rem;
+  }
+  .about-hero__answer,
+  .about-hero__side {
+    position: static;
+  }
+  .about-hero__side {
+    width: 100%;
+  }
+  .photos {
+    height: 300rem;
+  }
+  .facts-title {
+    padding: 80rem var(--pad) 40rem;
+  }
+  .lifespan__card {
+    height: 380rem;
+    padding: 20rem;
+    p {
+      margin-top: 30rem;
+      font-size: 18rem;
+    }
+    .title-m {
+      font-size: 28rem;
+    }
+  }
+  .lifespan__num {
+    left: 20rem;
+    font-size: 100rem;
+    bottom: -14rem;
+  }
+  .how {
+    padding: 80rem var(--pad) 100rem;
+  }
+  .how__item:nth-child(3) {
+    margin-left: 120rem;
+  }
+  .how__item:nth-child(4) {
+    margin-left: 240rem;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 40rem;
+    padding: 40rem;
+  }
+  .passport-sticker {
+    top: 20rem;
+    right: 30rem;
+  }
+  .write {
+    margin-top: 100rem;
+    padding: 40rem;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+  }
+  .write__giant,
+  .write__side {
+    position: static;
+    width: auto;
+  }
+
+  .art-hero {
+    min-height: 0;
+    padding: 40rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .art-hero__title {
+    margin: 40rem 0 16rem;
+  }
+  .art-hero__answer {
+    position: static;
+    align-self: flex-end;
+    margin-top: 30rem;
+  }
+  .art-cover {
+    height: 420rem;
+    .sticker {
+      font-size: 36rem;
+      right: 40rem;
+      bottom: 40rem;
+    }
+  }
+  .art-section {
+    padding-top: 90rem;
+  }
+  .art-section__title {
+    margin-bottom: 36rem;
+  }
+  .who {
+    grid-template-columns: 1fr;
+    .block {
+      height: 400rem;
+    }
+    p + p {
+      margin-top: 20rem;
+    }
+  }
+  .alone {
+    grid-template-columns: 1fr 1.4fr;
+    .block {
+      height: 380rem;
+      padding: 30rem;
+    }
+  }
+  .alone__no {
+    font-size: 120rem;
+    left: 30rem;
+  }
+  .alone__text {
+    left: 30rem;
+    right: 30rem;
+    font-size: 16rem;
+  }
+  .quote {
+    grid-template-columns: 1fr 200rem;
+    column-gap: 30rem;
+    padding: 40rem;
+  }
+  .quote__text {
+    margin: 40rem 0 10rem;
+  }
+  .quote__photo {
+    height: 260rem;
+  }
+  .food {
+    .block {
+      height: 360rem;
+      padding: 30rem;
+    }
+    ul {
+      margin-top: 40rem;
+      font-size: 26rem;
+    }
+  }
+  .home {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home__text {
+    grid-column: 1 / -1;
+  }
+  .home__big {
+    height: 460rem;
+  }
+  .mistakes li {
+    height: auto;
+    padding: 24rem 30rem;
+    grid-template-columns: 90rem 1fr;
+    row-gap: 8rem;
+  }
+  .mistakes__num {
+    grid-row: 1 / 3;
+    font-size: 110rem;
+  }
+  .mistakes__title {
+    font-size: 32rem;
+  }
+  .more {
+    grid-template-columns: 1fr;
+  }
+  .more__side {
+    grid-column: 1;
+    grid-template-columns: 240rem 1fr;
+    .block {
+      height: 200rem;
+    }
+  }
+}
+
+/* ---------- телефон: макет 375 ---------- */
+@media (max-width: 600px) {
+  html {
+    font-size: min(calc(1vw / 3.75), calc(1svh / 8.12));
+  }
+  :root {
+    --pad: 16rem;
+    --gap: 4rem;
+    --radius: 12rem;
+  }
+  body {
+    font-size: 16rem;
+  }
+  .title-xl {
+    font-size: 40rem;
+  }
+  .title-l {
+    font-size: 30rem;
+  }
+  .title-m {
+    font-size: 28rem;
+  }
+  .giant {
+    font-size: 104rem;
+  }
+  .section {
+    padding-top: 60rem;
+  }
+  .button {
+    min-width: 0;
+    width: 100%;
+    font-size: 16rem;
+  }
+
+  .header {
+    height: 56rem;
+    padding: 0 14rem;
+    font-size: 15rem;
+  }
+  .header__logo {
+    width: 78rem;
+    height: 33rem;
+    margin-right: auto;
+  }
+  .header__nav {
+    gap: 14rem;
+  }
+  .header__cta {
+    display: none;
+  }
+  .marquee {
+    height: 44rem;
+  }
+  .marquee__track {
+    font-size: 24rem;
+    gap: 14rem;
+    span {
+      gap: 14rem;
+    }
+    span::after {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+
+  .socials {
+    height: auto;
+    padding: 20rem 16rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14rem;
+  }
+  .socials__text {
+    width: auto;
+  }
+  .socials__links .button {
+    min-width: 0;
+    flex: 1;
+  }
+  .socials__nick {
+    display: block;
+    margin: 0;
+  }
+
+  .footer {
+    padding: 24rem 16rem;
+    gap: 30rem;
+  }
+  .footer__logo .sticker {
+    font-size: 18rem;
+    padding: 4rem 14rem;
+    top: -16rem;
+    right: 0;
+  }
+  .footer__nav {
+    flex-wrap: wrap;
+    gap: 10rem 20rem;
+    font-size: 15rem;
+  }
+
+  .stub__hero {
+    padding: 28rem 16rem 24rem;
+    row-gap: 28rem;
+  }
+  .stub__question {
+    font-size: 28rem;
+  }
+  .stub__form {
+    max-width: none;
+  }
+
+  .about-hero {
+    padding: 28rem 16rem 24rem;
+  }
+  .about-hero__question {
+    font-size: 28rem;
+  }
+  .photos {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    > * {
+      height: 200rem;
+    }
+    > *:first-child {
+      grid-column: 1 / -1;
+      height: 240rem;
+    }
+  }
+  .facts-title {
+    padding: 60rem var(--pad) 28rem;
+  }
+  .lifespan {
+    grid-template-columns: 1fr;
+  }
+  .lifespan__card {
+    height: 240rem;
+    p {
+      margin-top: 12rem;
+      font-size: 15rem;
+      max-width: 200rem;
+    }
+  }
+  .lifespan__num {
+    left: auto;
+    right: 16rem;
+    font-size: 120rem;
+  }
+  .how {
+    padding: 60rem var(--pad) 70rem;
+  }
+  .how__item:nth-child(n) {
+    margin-left: 0;
+  }
+  .intro {
+    padding: 24rem 16rem;
+  }
+  .passport {
+    grid-template-columns: 110rem 1fr;
+    padding: 16rem;
+    column-gap: 16rem;
+  }
+  .passport__photo {
+    height: 140rem;
+  }
+  .passport__list {
+    grid-template-columns: 90rem 1fr;
+    font-size: 14rem;
+  }
+  .passport-sticker {
+    font-size: 22rem;
+    top: 12rem;
+    right: 12rem;
+  }
+  .write {
+    margin-top: 70rem;
+    padding: 24rem 16rem;
+  }
+
+  .art-hero {
+    padding: 24rem 16rem;
+  }
+  .art-hero__title {
+    margin: 30rem 0 12rem;
+  }
+  .art-cover {
+    height: 260rem;
+    .sticker {
+      font-size: 22rem;
+      padding: 6rem 16rem;
+      right: 16rem;
+      bottom: 20rem;
+    }
+  }
+  .art-section {
+    padding-top: 64rem;
+  }
+  .art-section__title {
+    margin-bottom: 24rem;
+  }
+  .who .block {
+    height: 260rem;
+  }
+  .alone {
+    grid-template-columns: 1fr;
+    margin-top: 28rem;
+    .block {
+      height: auto;
+      min-height: 200rem;
+      padding: 20rem 16rem;
+    }
+  }
+  .alone__no {
+    position: static;
+    font-size: 110rem;
+  }
+  .alone__text {
+    position: static;
+    margin-top: 16rem;
+  }
+  .quote {
+    grid-template-columns: 1fr;
+    padding: 24rem 16rem;
+  }
+  .quote__photo {
+    grid-row: auto;
+    grid-column: 1;
+    height: 260rem;
+    margin-top: 20rem;
+  }
+  .food {
+    grid-template-columns: 1fr;
+    .block {
+      height: auto;
+      padding: 20rem 16rem 24rem;
+    }
+    ul {
+      margin-top: 16rem;
+      font-size: 20rem;
+    }
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home__big {
+    height: 360rem;
+  }
+  .home__small {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180rem;
+  }
+  .mistakes li {
+    grid-template-columns: 56rem 1fr;
+    padding: 18rem 16rem;
+  }
+  .mistakes__num {
+    font-size: 70rem;
+  }
+  .mistakes__title {
+    font-size: 22rem;
+  }
+  .more__main .block {
+    height: 240rem;
+  }
+  .more__side {
+    grid-template-columns: 130rem 1fr;
+    gap: 16rem 12rem;
+    .block {
+      height: 110rem;
+    }
+  }
+  .page-end {
+    margin-top: 80rem;
+  }
+  .write__giant {
+    font-size: 80rem;
+  }
+}
+
+/* ---------- правки: планшет и телефон ---------- */
+@media (max-width: 1024px) {
+  /* шапка: слева логотип, справа три линии */
+  .header {
+    height: 64rem;
+  }
+  .header__nav,
+  .header__cta {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+
+  /* первый экран — на всю высоту устройства */
+  .stub {
+    min-height: calc(100svh - 2 * var(--gap));
+  }
+  .stub__hero {
+    flex-grow: 1;
+    align-content: space-between;
+  }
+  .about-hero,
+  .art-hero {
+    min-height: calc(100svh - 64rem - 3 * var(--gap));
+    justify-content: space-between;
+  }
+  .giant {
+    font-size: 190rem;
+  }
+  .write__giant {
+    font-size: 150rem;
+  }
+
+  /* блоки выше, чтобы на экран попадал один блок */
+  .photos {
+    height: 400rem;
+  }
+  .lifespan__card {
+    height: 460rem;
+  }
+  .intro,
+  .write,
+  .footer {
+    min-height: 72svh;
+  }
+  .write,
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .art-cover {
+    height: 660rem;
+  }
+  .quote {
+    min-height: 560rem;
+  }
+  .home {
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+  }
+  .home__small {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300rem;
+  }
+
+  /* подвал и соцсети — столбиком, как на телефоне */
+  .footer__nav {
+    flex-direction: column;
+    gap: 12rem;
+    font-size: 24rem;
+  }
+  .socials {
+    height: auto;
+    padding: 24rem 30rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16rem;
+  }
+  .socials__text {
+    width: auto;
+    margin: 0;
+  }
+  .socials__links .button {
+    flex: 1;
+    min-width: 0;
+  }
+  .socials__note {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 56rem;
+  }
+  .header__burger {
+    width: 40rem;
+    height: 40rem;
+    gap: 5rem;
+  }
+  .about-hero,
+  .art-hero {
+    min-height: calc(100svh - 56rem - 3 * var(--gap));
+  }
+  .giant {
+    font-size: 96rem;
+  }
+  .write__giant {
+    font-size: 72rem;
+  }
+  .photos {
+    height: auto;
+  }
+  .lifespan__card {
+    height: 300rem;
+  }
+  .art-cover {
+    height: 460rem;
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home__big {
+    height: 420rem;
+  }
+  .home__small {
+    grid-template-rows: 200rem;
+  }
+  .footer__nav {
+    font-size: 18rem;
+    gap: 10rem;
+  }
+  .socials {
+    padding: 20rem 16rem;
+  }
+  .menu {
+    padding: 8rem 16rem 28rem;
+    gap: 20rem;
+  }
+  .menu__top {
+    height: 40rem;
+  }
+  .menu__logo {
+    width: 91rem;
+    height: 39rem;
+  }
+  .menu__link {
+    font-size: 30rem;
+    padding: 12rem 0;
+  }
+}
+
+/* ---------- правки 2: воздух внизу, без ника ---------- */
+@media (max-width: 1024px) {
+  body {
+    padding-bottom: 40rem;
+  }
+  .socials__nick {
+    display: none;
+  }
+  .footer {
+    justify-content: flex-start;
+    gap: 48rem;
+    margin-top: 40rem;
+  }
+  .footer__nav {
+    margin-top: auto;
+  }
+  .photos {
+    height: 400rem;
+  }
+  .art-cover {
+    height: 660rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 32rem;
+  }
+  .footer {
+    gap: 36rem;
+    margin-top: 32rem;
+  }
+  .photos {
+    height: auto;
+  }
+  .art-cover {
+    height: 460rem;
+  }
+}
+
+/* заглушка — ровно один экран, без лишнего отступа снизу */
+body:has(.stub) {
+  padding-bottom: var(--gap);
+}
+.stub {
+  min-height: calc(100svh - 2 * var(--gap) - 1px);
+}
+
+@media (max-width: 1024px) {
+  .socials {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .passport-sticker {
+    top: -10rem;
+    right: -10rem;
+  }
+  .intro__text {
+    gap: 32rem;
+    .button {
+      margin-top: 16rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .passport-sticker {
+    top: -10rem;
+    right: -6rem;
+  }
+  .intro__text {
+    gap: 20rem;
+  }
+}
