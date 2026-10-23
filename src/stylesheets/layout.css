@@ -861,3 +861,41 @@ html {
   top: -9rem;
   right: -15rem;
 }
+
+/* ---------- правки по макету ---------- */
+/* три фото — пропорции как в макете */
+.photos {
+  height: 480rem;
+}
+/* «О нас»: подзаголовок в три строки */
+.about-hero__question {
+  max-width: none;
+}
+/* без пустоты между «Первая статья» и «Есть история» */
+.write {
+  margin-top: 0;
+}
+/* воздух перед подвалом на странице статьи */
+.page-end {
+  padding-bottom: 160rem;
+}
+/* «Где он будет жить?» */
+.home {
+  grid-template-columns: 413rem 522rem 305rem;
+  margin-top: 45rem;
+  p:first-child {
+    font-size: 16rem;
+    max-width: 334rem;
+  }
+  .label {
+    margin-top: 40rem !important;
+    color: var(--green);
+  }
+}
+.home__tags {
+  gap: 8rem;
+  li {
+    font-size: 15rem;
+    padding: 14rem 20rem;
+  }
+}

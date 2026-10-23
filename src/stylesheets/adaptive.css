@@ -786,3 +786,23 @@ body:has(.stub) {
     gap: 12rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .photos {
+    height: 400rem;
+  }
+  .home {
+    margin-top: 0;
+  }
+  .page-end {
+    padding-bottom: 100rem;
+  }
+}
+@media (max-width: 600px) {
+  .photos {
+    height: auto;
+  }
+  .page-end {
+    padding-bottom: 60rem;
+  }
+}
