@@ -769,3 +769,20 @@ body:has(.stub) {
     gap: 20rem;
   }
 }
+
+/* подвал на планшете и телефоне: без «наверх», разделы крупнее */
+@media (max-width: 1024px) {
+  .footer__nav {
+    font-size: 36rem;
+    gap: 16rem;
+    a[href="#top"] {
+      display: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .footer__nav {
+    font-size: 28rem;
+    gap: 12rem;
+  }
+}

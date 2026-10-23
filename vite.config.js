@@ -31,6 +31,10 @@ const pages = {
     file: 'pages/articles/yascheritsy.html',
     chunks: ['/javascripts/allStyles.js']
   },
+  soon: {
+    file: 'pages/articles/soon.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
   firstExot: {
     file: 'pages/articles/how-to-choose-first-exota.html',
     chunks: ['/javascripts/allStyles.js']
