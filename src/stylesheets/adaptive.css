@@ -855,3 +855,40 @@ body:has(.stub) {
     margin-top: 0;
   }
 }
+
+/* «-ящрц!» логотипным шрифтом */
+.logo-word {
+  display: flex;
+  align-items: center;
+  gap: 0.04em;
+}
+.logo-letters {
+  height: 0.78em;
+  width: auto;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* «откуда вы всё знаете» — лесенка по ширине экрана, как в макете */
+@media (min-width: 1025px) {
+  .how__item:nth-child(3) {
+    margin-left: 22.6vw;
+  }
+  .how__item:nth-child(4) {
+    margin-left: 45.1vw;
+  }
+}
+
+/* телефон: без лишних отступов у подвала и внизу, мордочка поссума в кадре */
+@media (max-width: 600px) {
+  .footer {
+    margin-top: 0;
+  }
+  body,
+  body:has(.stub) {
+    padding-bottom: var(--gap);
+  }
+  .art-cover img {
+    object-position: 85% center;
+  }
+}
