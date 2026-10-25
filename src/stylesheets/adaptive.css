@@ -806,3 +806,52 @@ body:has(.stub) {
     padding-bottom: 60rem;
   }
 }
+
+/* ---------- правки преподавателя: поджать телефон ---------- */
+.more__time {
+  margin-top: 10rem;
+}
+@media (max-width: 600px) {
+  .about-hero,
+  .art-hero {
+    min-height: 0;
+  }
+  .about-hero__side {
+    margin-top: 70rem;
+  }
+  .art-hero {
+    gap: 20rem;
+  }
+  .art-hero__title {
+    margin: 0;
+  }
+  .art-hero__answer {
+    margin-top: 0;
+  }
+  .lifespan__num {
+    left: 16rem;
+    right: auto;
+    bottom: 8rem;
+    font-size: 90rem;
+  }
+  .intro__text {
+    gap: 24rem;
+  }
+  .lifespan__card {
+    height: 240rem;
+  }
+  .write {
+    margin-top: 0;
+    min-height: 0;
+    justify-content: flex-start;
+    gap: 28rem;
+  }
+  .footer {
+    height: auto;
+    min-height: 0;
+    gap: 28rem;
+  }
+  .footer__nav {
+    margin-top: 0;
+  }
+}
